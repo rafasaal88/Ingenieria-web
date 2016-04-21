@@ -13,6 +13,5 @@ from django.contrib.auth import login, authenticate, logout, get_user_model
 from django.contrib.auth.decorators import login_required
 
 
-"""Listar todas las entradas del blog"""
 def index(request):
 	return render_to_response('index.html', context_instance=RequestContext(request))

@@ -16,7 +16,7 @@
 
 <!--Script para menú desplegables-->
   <script>
-      $(document).ready(function() 
+      $(document).ready(function()
       {
           $('select').material_select();
       });
@@ -26,26 +26,26 @@
 
 
 
-<body>
+<body bgcolor="card grey lighten-5">
 
 
 <!--Si el usuario está autenticado-->
 {% if user.is_authenticated %}
 
-<nav class="teal">
+<nav class="amber">
   <!-- === Barra de navegación === -->
   <ul class="left hide-on-med-and-down">
     <li><a href="#">Opción1</a></li>
     <li><a href="#">Opción2</a></li>
     <li><a href="#">Opción3</a></li>
   </ul>
-  
+
   <!-- === Menú de usuario === -->
   <ul class="right">
     <li><a class="dropdown-button" href="#!" data-activates="d2">
 
   <!--Imagen de Usuario-->
-  <div class="chip"> 
+  <div class="chip">
     <img src="{{ STATIC_URL }}/users/default.png" alt="Contact Person">
     {{user}}
   </div>
@@ -69,15 +69,7 @@
 {% else %}
   <!-- === Barra de navegación === -->
 
-<nav class="teal">
-  <ul class="left hide-on-med-and-down">
-    <li><a href="#">Opción1</a></li>
-    <li><a href="#">Opción2</a></li>
-    <li><a href="#">Opción3</a></li>
-    </li>
-  </ul>
-  
-</nav>
+
 
 {% endif %}
 
@@ -86,3 +78,11 @@
 
 </body>
 </html>
+
+<!--Script para menú desplegables-->
+<script>
+      $(document).ready(function()
+      {
+          $('select').material_select();
+      });
+</script>
